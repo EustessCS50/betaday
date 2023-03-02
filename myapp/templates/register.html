@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h2>BETADAY</h2>
+        <div class="container">
+            <div class="box1">
+                 <h2>Access exclusive features with a free account</h2>   
+                 <div class="info">
+                    <div class="info1">
+                        <img src="{% static 'images/folder-plus.png' %}" alt="img">
+                        <p>Save and sort your favorite assets with Collections</p>
+                    </div>
+                    <div class="info2">
+                        <img src="{% static 'images/share.png' %}" alt="img">
+                        <p>Share Collections with anyone, anywhere</p>
+                    </div>
+                    <div class="info3">
+                        <img src="{% static 'images/download.png' %}" alt="img">
+                        <p>Download your favorite Collections</p>
+                    </div>
+                    <div class="info4">
+                        <img src="{% static 'images/crossed-eye2.png' %}" alt="img">
+                        <p>Easily keep track of your download and browsing history</p>
+                    </div>
+                    <p>Plus much more</p>
+                 </div>
+            </div>
+            <div class="box2">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <h2>Create your free account</h2>
+                    <br>
+                    <label>Username</label>
+                    <br>
+                    <input type="text" name="username" placeholder="Type your username">
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" placeholder="Type your email">
+                    <br>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" name="password" id="myInput" placeholder="Type your password">
+                    <br>
+                    <input type="checkbox" name="showpswd" id="show" onclick="showPSWD()"> Show Password
+                    <br>
+                    <br>
+                    <button type="submit">Get Started</button>
+                    <br>
+                    <p>By creating an account, I agree with to the BETADAY's </p><a href="#">Website Terms,
+                        Privacy Policy, and Licensing Terms</a>
+                    <br>
+                    <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>betaday.net since2023</footer>
+    <script>
+        function showPSWD(){
+            x = document.getElementById('myInput');
+            if (x.type === "password"){
+                x.type = "text";
+            }else{
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

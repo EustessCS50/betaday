@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="trash">
+                <img src="{% static 'images/trashcan.png'%}" alt="trash-img">
+            </div>
+            <div class="side">
+                <div class="home">
+                    <img src="{% static 'images/house.png'%}" alt="img">
+                    <h5>Home</h5>
+                </div>
+                <div class="appreciators">
+                    <img src="{% static 'images/heart.png'%}" alt="img">
+                    <h5>Appreciators</h5>
+                </div>
+                <div class="posts">
+                    <img src="{% static 'images/posts.png'%}" alt="img">
+                    <h5>Posts</h5>
+                </div>
+                <div class="gallery">
+                    <img src="{% static 'images/gallery.png'%}" alt="img">
+                    <h5>Gallery</h5>
+                </div>
+                <div class="extra">
+                    <img src="{% static 'images/extra.png' %}" alt="img">
+                    <h5>Extras</h5>
+                </div>
+                <div class="subscriptions">
+                    <img src="{% static 'images/subscriptions.png' %}" alt="img">
+                    <h5>Subscriptions</h5>
+                </div>
+                <div class="pocket">
+                    <img src="{% static 'images/pocket.png'%}" alt="img">
+                    <h5>Pocket</h5>
+                </div>
+                <div class="settings">
+                    <img src="{% static 'images/settings.png' %}" alt="img">
+                    <h5>Settings</h5>
+                </div>
+                <div class="logout">
+                    <img src="{% static 'images/logout.png' %}" alt="img">
+                    <h5>Logout</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="bio">
+                <div class="info">
+                    <img src="{% static 'images/user2.jpeg' %}" alt="pic">
+                    <div class="name">
+                        <h3>Hi Anita Woods</h3>{{request.user}}
+                        <p>betaday.net/anitawoods</p>
+                    </div>
+                </div>
+                <div class="post-btn">
+                    <button>Share Post</button>
+                </div>
+            </div>
+            <div class="finance">
+                <div class="box1">
+                    <div class="squ"></div>
+                    <p>$0 Earnings</p>
+                </div>
+                <div class="box2">
+                    <div class="squ"></div>
+                    <p>$0 Appreciation</p>
+                </div>
+                <div class="box3">
+                    <div class="squ"></div>
+                    <p>$0 Extras</p>
+                </div>
+            </div>
+            <div class="content">
+                <img src="{% static 'regular/heart.svg' %}" alt="heart-img">
+                <h4>You Don't have any Appreciations yet</h4>
+                <p>Share your page with fans to get appreciators</p>
+            </div>
+            <div class="footer">
+                <div class="foot1">
+                    <h4>Sell Extra</h4>
+                    <p style="padding-left: 15px; padding-right: 15px;">Introducing Extra, the creative way to sell.</p>
+                    <br>
+                    <a>Start Now ></a>
+                </div>
+                <div class="foot2">
+                    <h4>Premium Post</h4>
+                    <p style="padding-left: 15px; padding-right:15px;">Post your Content for your apreciators and Subscribers</p>
+                    <br>
+                    <a>Create Post ></a>
+                </div>
+                <div class="foot3">
+                    <h4>Enable Subscriptions</h4>
+                    <p style="padding-left: 15px; padding-right:15px;">Premuim membership for your biggest fans</p>
+                    <br>
+                    <a>Start Now ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

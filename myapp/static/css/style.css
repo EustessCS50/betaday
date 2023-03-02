@@ -1,0 +1,192 @@
+
+.main{
+    height: 650px;
+    /* border: 2px black solid; */
+    margin: 8px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding: 8px;
+    display: flex;
+    gap: 2%;
+}
+.main .nav{
+    height: 650px;
+    width: 20%;
+    /* box-shadow: 0px  2px 8px 0px rgba(99,99,99,0.2); */
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+    background-color: rgb(255, 251, 251);
+}
+.main .nav .trash{
+    height: 10%;
+}
+.main .nav .trash img{
+    width: 60px;
+    height: 60px;
+}
+.main .nav .side{
+    display: block;
+    height: 80%;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+}
+.main .nav .side .home, .appreciators, .posts, 
+.gallery, .extra, .subscriptions, .pocket, .settings, .logout{
+    display: flex;
+    box-shadow: 0px  2px 0px rgba(17,17,26,0.1);
+    height: 8%;
+    margin: 8px;
+    gap: 5px;
+    align-items: center;
+}
+.main .nav .side .home img{
+    height: 35px;
+    width: 35px;
+}
+.main .nav .side .appreciators img{
+    height: 35px;
+    width: 35px;
+}
+.main .nav .side .posts img{
+    height: 35px;
+    width: 35px;
+}
+.main .nav .side .gallery img{
+    height: 35px;
+    width: 35px;
+}
+.main .nav .side .extra img{
+    height: 35px;
+    width: 35px;
+}
+
+.main .nav .side .subscriptions img{
+    height: 35px;
+    width: 35px;
+}
+.main .nav .side .pocket img{
+    height: 35px;
+    width: 35px;
+}
+.main .nav .side .settings img{
+    height: 35px;
+    width: 35px;
+}
+.main .nav .side .logout img{
+    height: 35px;
+    width: 35px;
+}
+
+/*         
+img{
+    height: 100%;
+    border: 2px blue solid;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+} */
+.main .container{
+    height: 100%;
+    width: 78%;
+}
+.main .container .bio{
+    display: flex;
+    /* border: 2px black solid; */
+    box-shadow: 0px  2px 0px rgba(17,17,26,0.1);
+    flex-direction: row;
+    height: 10%;
+    padding: 10px;
+    margin: 10px;
+
+}
+.main .container .bio .info{
+    display: flex;
+    gap: 10px;
+    width: 80%;
+}
+.main .container .bio .info img{
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+}
+.main .container .bio .info .name{
+    line-height: 5px;
+}
+.main .container .bio .post-btn{
+    display: block;
+    text-align: center;
+    width: 20%;
+    padding: 0px;
+    margin: 0px;
+}
+.main .container .bio .post-btn button{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    background-color: green;
+    border-radius: 50px;
+    width: 70%;
+}
+.container .finance{
+    display: flex;
+    height: 6%;
+    gap: 10%;
+    margin: 10px;
+    margin-left: 40px;
+}
+.container .finance .box1, .box2, .box3{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    /* border: red solid 2px; */
+    /* padding: px; */
+}
+.container .finance .box1 .squ{
+    height: 20px;
+    width: 20px;
+    background: pink;
+    margin: 2px;
+}
+.container .finance .box2 .squ{
+    height: 20px;
+    width: 20px;
+    background: rgb(155, 187, 106);
+    margin: 2px;
+}
+.container .finance .box3 .squ{
+    height: 20px;
+    width: 20px;
+    background: rgb(182, 180, 77);
+    margin: 2px;
+}
+.container .content{
+    height: 35%;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    padding-top: 35px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px  2px 8px 0px rgba(99,99,99,0.2);
+    
+}
+.container .content img{
+    height: 40px;
+    width: 40px;
+}
+.container .footer{
+    display: flex;
+    height: 30%;
+    gap: 10%;
+    margin: 10px;
+}
+.container .footer .foot1, .foot2, .foot3{
+    display: block;
+    text-align: center;
+    align-items: center;
+    box-shadow:rgba(0,0,0,0.35) 0px 5px 10px;
+    width: 50%;
+}

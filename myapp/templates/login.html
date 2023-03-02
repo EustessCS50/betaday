@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            height: 600px;
+        }
+        .container{
+            height: 400px;
+            width: 300px;
+            margin-top: 150px;
+            box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+            margin-left: 500px;
+            padding: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>
+            Welcome to BETADAY
+        </h2>
+        <br>
+        <h3>Login</h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="Username">Username</label>
+        <input type="text" name="username" placeholder="Type in your username">
+        <br>
+        <label for="Password">Password</label>
+        <input type="password" name="password" placeholder="Type in your password">
+        <button type="submit">Login</button>
+    </form>
+    </div>
+</body>
+</html>

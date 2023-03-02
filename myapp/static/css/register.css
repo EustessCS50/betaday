@@ -1,0 +1,62 @@
+.main{
+    height: 600px;
+}
+.container{
+    display: flex;
+    margin-left: 300px;
+    margin-top: 50px;
+    height: 400px;
+    width: 800px;
+    /* border: 1px rgb(131, 125, 125) solid; */
+    box-shadow: rgba(0,0,0,0.09) 1px -2px 5px;
+    border-radius: 10px;
+}
+.container .box1{
+    height: 100%;
+    width: 50%;
+    border-right: 1px rgb(131, 125, 125) solid;
+}
+.container.box1 .info{
+    /* display: flex; */
+    margin-left: 20px;
+}
+.container .box1 .info1, .info2, .info3, .info4{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    gap: 5px;
+}
+.container .box1 .info1 img{
+    height: 35px;
+    width: 35px;
+}
+.container .box1 .info2 img{
+    height: 30px;
+    width: 30px;
+}
+.container .box1 .info3 img{
+    height: 35px;
+    width: 35px;
+}
+.container .box1 .info4 img{
+    height: 35px;
+    width: 35px;
+}
+.container .box2{
+    height: 100%;
+    width: 50%;
+    /* border: 1px rgb(131, 125, 125) solid; */
+    padding-left: 20px;
+}
+.container .box2 form input{
+    width: 90%;
+}
+.container .box2 form button{
+    background-color: red;
+    color: white;
+    width: 90%;
+    border-radius: 10px;
+}
+footer{
+    text-align: center;
+}
